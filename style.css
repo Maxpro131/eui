@@ -1296,6 +1296,29 @@ body::after {
     margin-bottom: 1rem;
 }
 
+.device-codename:has(+ .device-version-note) {
+    margin-bottom: 0.35rem;
+}
+
+.device-version-note {
+    font-size: 0.76rem;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+    line-height: 1.4;
+}
+
+.device-version-note:last-of-type {
+    margin-bottom: 1rem;
+}
+
+.device-version-note.gold {
+    color: var(--gold);
+}
+
+.device-version-note strong {
+    font-weight: 700;
+}
+
 .device-buttons {
     display: flex;
     flex-wrap: wrap;
